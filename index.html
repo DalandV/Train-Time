@@ -25,8 +25,8 @@
         <div class="row">
             <div class="col main-content" id="schedule-div">
                 <p>Current Train Schedule</p>
-                <table>
-                    <tr id="tabel-headers">
+                <table id="train-sched">
+                    <tr>
                         <th>Train Name</th>
                         <th>Destination</th>
                         <th>Frequency (min)</th>
@@ -46,11 +46,11 @@
                     <label for="destination">Destination</label>
                     <input type="text" id="destination">
 
-                    <label for="first-train-time">First Train Time</label>
+                    <label for="first-train-time">First Train Time (HH:mm - military time</label>
                     <input type="text" id="first-train-time">
 
                     <label for="frequency">Frequency</label>
-                    <input type="text" id="frequency">
+                    <input type="number" id="frequency">
 
                     <input type="submit" value="Submit" id="submit-btn">
                 </form>
@@ -58,14 +58,14 @@
         </div>
     </div>
 
-    <script src="assets/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
 </body>
 
 </html>
