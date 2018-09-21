@@ -33,6 +33,11 @@ $(document).ready(function () {
 
     database.ref().on("child_added", function (snapshot) {
 
+        // Unfinished Portion
+        // Create variables to store 'Next Arrival' and 'Minutes Away' data
+        // Get the time for 'Next Arrival' by adding the 'First Train Time' to the 'frequency' and convert it from military time
+        // Get a the 'Minutes Away' values by subtracting the 'Next Arrival' time from the current time 
+
         $("#train-sched").append("<tr><td>" + snapshot.val().trainName + "</td><td>" + snapshot.val().trainDest + "</td><td>" + snapshot.val().trainFreq + "</td></tr>");
 
     }, function (errorObject) {
